@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon.ico">
+
+    <title>Live Midroll Test</title>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Live Midroll Test</h1>
+
+      <div class="player-input row">
+        <div class="col-lg-4">
+          <div class="input-group">
+            <span class="input-group-addon" id="account-addon">Account ID</span>
+            <input type="text" id="account-input" class="form-control" value="1924997959001">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="input-group">
+            <span class="input-group-addon" id="player-addon">Player ID</span>
+            <input type="text" id="player-input" class="form-control" value="79d8c2cc-2a18-406b-9743-25f46b803c11">
+            <!--<span class="input-group-btn">-->
+            <!--</span>-->
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <button class="btn btn-success" id="load-player-btn" type="button">Load Player</button>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div id="playerHolder">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
